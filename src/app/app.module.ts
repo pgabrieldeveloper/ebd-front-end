@@ -7,13 +7,15 @@ import { LoginComponent } from './pages/login/login.component';
 import { ListClassesComponent } from './pages/adjaf/ebd/list-classes/list-classes.component';
 import { CadastroComponent } from './pages/adjaf/ebd/cadastro/cadastro.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ListAlunosComponent } from './pages/adjaf/ebd/list-alunos/list-alunos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ListClassesComponent,
-    CadastroComponent
+    CadastroComponent,
+    ListAlunosComponent
   ],
   imports: [
     BrowserModule,

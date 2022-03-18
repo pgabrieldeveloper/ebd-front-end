@@ -1,0 +1,38 @@
+.card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 10px ;
+
+    h4{
+        border-radius: 10px 10px 0 0 ;
+        color: #FFF;
+        background-color: #dcdde1;
+        text-align: center;
+    }  
+}
+
+.card-corpo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    list-style: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #dcdde1;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+    padding: 2px 5% 2px 5%;
+}

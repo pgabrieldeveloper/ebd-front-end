@@ -1,0 +1,24 @@
+
+<div class="container" *ngFor="let aluno of alunos">
+    <div class="card">
+        <h4>
+            {{aluno.nome}}
+        </h4>
+            <ul class="card-corpo">
+                <li>
+                     <input type="checkbox"> biblia
+                </li>
+                <li>
+                    <input type="checkbox"> revista
+                </li>
+                <li>
+                    <input type="checkbox">  presença
+                </li>
+            </ul>
+    </div>
+</div>
+<div class="container center">
+    <button>
+        Realizar Chamada
+    </button>
+</div>
