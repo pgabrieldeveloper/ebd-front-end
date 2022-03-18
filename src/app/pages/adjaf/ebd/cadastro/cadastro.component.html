@@ -1,0 +1,13 @@
+<form [formGroup]="cadastroForm">
+    <label for="">Email</label>
+    <input type="email" formControlName="email">
+    <label for="">Password</label>
+    <input type="text" formControlName="password">
+    <label for="">Permissão</label>
+    <select formControlName="permissoes">
+        <option value="0">Selecione</option>
+        <option value="1">ADM</option>
+        <option value="2">AJUDANTE</option>
+    </select>
+    {{cadastroForm.get('email')?.value}} -  {{cadastroForm.get('permissoes')?.value}}
+</form>
