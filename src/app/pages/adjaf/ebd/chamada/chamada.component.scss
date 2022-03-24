@@ -1,0 +1,33 @@
+@use "src/config-css/rem-calc";
+@use "src/config-css/variables";
+@use "src/config-css/btn";
+
+
+.form {
+  padding: rem-calc.rem-calc(5);
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  border-radius: rem-calc.rem-calc(10);
+  background-color: var(--branco);
+  margin: rem-calc.rem-calc(3);
+  font-size: rem-calc.rem-calc(10);
+  p{
+    text-align: center;
+    color: var(--primary-color);
+  }
+  label{
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: rem-calc.rem-calc(1);
+    span{
+      font-weight: 100;
+
+    }
+  }
+
+
+}

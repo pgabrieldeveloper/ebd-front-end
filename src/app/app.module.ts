@@ -8,6 +8,8 @@ import { ListClassesComponent } from './pages/adjaf/ebd/list-classes/list-classe
 import { CadastroComponent } from './pages/adjaf/ebd/cadastro/cadastro.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListAlunosComponent } from './pages/adjaf/ebd/list-alunos/list-alunos.component';
+import {SharedModule} from "./shared/shared.module";
+import { ChamadaComponent } from './pages/adjaf/ebd/chamada/chamada.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { ListAlunosComponent } from './pages/adjaf/ebd/list-alunos/list-alunos.c
     LoginComponent,
     ListClassesComponent,
     CadastroComponent,
-    ListAlunosComponent
+    ListAlunosComponent,
+    ChamadaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

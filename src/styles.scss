@@ -1,14 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
+@use "src/config-css/variables";
+@use "src/config-css/rem-calc";
+@use "src/config-css/reset";
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+
 }
 
 body {
-    background-color: #00a8ff;
+  background-color: var(--primary-color);
 }
 
-.container {
-    display: flex;
-    width: 325px;
-    margin: 0 auto;
+main {
+  max-width: rem-calc.rem-calc(600);
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (max-width: 420px) {
+    max-width: rem-calc.rem-calc(350);
+    font-size: rem-calc.rem-calc(14);
+  }
 }
