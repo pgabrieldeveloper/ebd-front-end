@@ -2,32 +2,53 @@
 @use "src/config-css/variables";
 @use "src/config-css/btn";
 
-
-.form {
-  padding: rem-calc.rem-calc(5);
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: center;
-  border-radius: rem-calc.rem-calc(10);
+section{
+ 
   background-color: var(--branco);
-  margin: rem-calc.rem-calc(3);
-  font-size: rem-calc.rem-calc(10);
-  p{
-    text-align: center;
-    color: var(--primary-color);
-  }
-  label{
-    color: var(--secondary-color);
+  border-radius: rem-calc.rem-calc(10) rem-calc.rem-calc(10) rem-calc.rem-calc(0) rem-calc.rem-calc(0);
+  padding: rem-calc.rem-calc(5);
+  margin-bottom: rem-calc.rem-calc(5);
+  .form {
+    border-bottom: 1px solid black;
+    padding: rem-calc.rem-calc(5);
     display: flex;
-    align-items: center;
+   
     justify-content: space-between;
-    margin: rem-calc.rem-calc(1);
-    span{
-      font-weight: 100;
-
+    margin: rem-calc.rem-calc(3);
+    font-size: rem-calc.rem-calc(10);
+    .aluno-card{
+      
+      display: flex;
+      width: 20%;
+      flex-direction: column;
+      p{
+        text-align: center;
+        color: var(--primary-color);
+      }
+      img{
+        border: rem-calc.rem-calc(1) solid red;
+        border-radius:  50%;
+      }
     }
+    .form-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
+    label{
+      color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: rem-calc.rem-calc(1);
+      span{
+        font-weight: 100;
+  
+      }
+    }
+  
+  
   }
-
-
+  
 }

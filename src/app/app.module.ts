@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ListAlunosComponent } from './pages/adjaf/ebd/list-alunos/list-alunos.component';
 import {SharedModule} from "./shared/shared.module";
 import { ChamadaComponent } from './pages/adjaf/ebd/chamada/chamada.component';
+import { ListAulasComponent } from './pages/adjaf/ebd/list-aulas/list-aulas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChamadaComponent } from './pages/adjaf/ebd/chamada/chamada.component';
     ListClassesComponent,
     CadastroComponent,
     ListAlunosComponent,
-    ChamadaComponent
+    ChamadaComponent,
+    ListAulasComponent
   ],
   imports: [
     BrowserModule,
